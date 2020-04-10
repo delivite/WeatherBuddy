@@ -187,7 +187,7 @@
               <item>
                <widget class="QLabel" name="date_label">
                 <property name="text">
-                 <string>Today: </string>
+                 <string>Date:</string>
                 </property>
                </widget>
               </item>

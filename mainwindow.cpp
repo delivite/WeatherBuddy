@@ -142,7 +142,6 @@ void MainWindow::parse_weather_data(const QString &data)
         set_weather_icon(url);
 
         ui->weather_label->setText("Weather: " + obj["description"].toString());
-        //qWarning() << obj["main"].toString() << ';'<<obj["description"].toString();
     }
 }
 
@@ -153,8 +152,6 @@ void MainWindow::set_weather_icon(const QString &url)
     QNetworkRequest image_request;
     image_request.setUrl(QUrl(url));
     image_manager->get(image_request);
-
-    //image_manager->deleteLater();
 }
 
 void MainWindow::request_weather_data(const long &city_id)
@@ -165,8 +162,6 @@ void MainWindow::request_weather_data(const long &city_id)
     QNetworkRequest request;
     request.setUrl(QUrl(url));
     manager->get(request);
-
-    //manager->deleteLater();
 }
 
 
