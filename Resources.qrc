@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>city_data.csv</file>
+        <file>ads.jpg</file>
+        <file>10d@2x.png</file>
+    </qresource>
+</RCC>
